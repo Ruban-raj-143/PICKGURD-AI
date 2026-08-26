@@ -7,6 +7,19 @@
 
 ---
 
+## 📸 Application Screenshots
+
+### 1. Operator AI Copilot Interface
+![Operator AI Copilot](docs/screenshots/01_operator_ui.png)
+
+### 2. Human-in-the-Loop Interrupt Checkpoint Modal
+![Human Review Modal](docs/screenshots/02_human_review_modal.png)
+
+### 3. Grounded Operational Evidence & Next-Best Action
+![Grounded Analysis Results](docs/screenshots/03_analysis_results.png)
+
+---
+
 ## 1. Project Overview & Problem Statement
 
 In high-volume e-commerce fulfilment centres, pick operators frequently encounter picking exceptions:
@@ -23,7 +36,7 @@ In high-volume e-commerce fulfilment centres, pick operators frequently encounte
 
 ## 2. Key Architectural Principles
 
-1. **Deterministic Operational Fact Layer:** The LLM does NOT retrieve raw facts. verified operational data is retrieved via deterministic Python tools (`get_inventory`, `get_pick_task`, `get_location`, `search_similar_incidents`).
+1. **Deterministic Operational Fact Layer:** The LLM does NOT retrieve raw facts. Verified operational data is retrieved via deterministic Python tools (`get_inventory`, `get_pick_task`, `get_location`, `search_similar_incidents`).
 2. **SOP RAG Retrieval:** Standard Operating Procedures are retrieved from ChromaDB vector store (`all-MiniLM-L6-v2`) with complete source provenance metadata.
 3. **Controlled Provider Abstraction:** Multi-level fallback hierarchy (`Groq` -> `Ollama` -> `MimicProvider`).
 4. **Deterministic Safety Policy & Action Boundary:** Safety risk classification (`LOW`, `MEDIUM`, `HIGH`) and execution boundaries (`RECOMMENDED` vs `BLOCKED`) are governed by deterministic rules. State-altering warehouse modifications (e.g. `UPDATE_INVENTORY`, `ADJUST_QUANTITY`) are automatically `BLOCKED`.
@@ -34,7 +47,7 @@ In high-volume e-commerce fulfilment centres, pick operators frequently encounte
 ## 3. Technology Stack
 
 - **Backend:** Python 3.12, FastAPI, LangGraph, LangChain, Pydantic, SQLite, ChromaDB, HuggingFace Transformers
-- **Frontend:** React 18, Vite, TypeScript, Lucide Icons, Vanilla CSS Design System
+- **Frontend:** React 18, Vite, TypeScript, Lucide Icons, Modern Vanilla CSS Glassmorphism Design System
 - **Testing:** Pytest (93 automated unit, contract, safety, API, and E2E tests passing)
 
 ---
