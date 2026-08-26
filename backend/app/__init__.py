@@ -1,0 +1,1 @@
+"""PickGuard AI Backend Application."""
