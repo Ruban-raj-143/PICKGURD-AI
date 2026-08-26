@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     environment: str = "development"
     primary_provider: str = "groq"
     groq_api_key: str = ""
-    groq_model: str = "qwen/qwen3.8-27b"
+    groq_model: str = "openai/gpt-oss-120b"
     ollama_model: str = "llama3"
     database_url: str = "sqlite:///./pickguard.db"
 
