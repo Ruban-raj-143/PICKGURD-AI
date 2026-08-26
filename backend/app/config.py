@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     environment: str = "development"
     primary_provider: str = "groq"
     groq_api_key: str = ""
-    groq_model: str = "llama-3.3-70b-versatile"
+    groq_model: str = "qwen/qwen3.8-27b"
     ollama_model: str = "llama3"
     database_url: str = "sqlite:///./pickguard.db"
 
