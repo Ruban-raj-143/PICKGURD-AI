@@ -183,7 +183,7 @@ def build_pdf(filename: str):
     meta_data = [
         [
             Paragraph("<b>Project:</b> PickGuard AI Capstone Full-Stack System", table_cell_style),
-            Paragraph("<b>Team:</b> <b>Vision Forge</b> (Author / Engineer: <b>Ruban Raj</b>)", table_cell_style),
+            Paragraph("<b>Team:</b> <b>Vision Forge</b>", table_cell_style),
         ],
         [
             Paragraph("<b>Domain:</b> Logistics / Fulfilment Operations", table_cell_style),
