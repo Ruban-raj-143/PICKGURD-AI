@@ -182,8 +182,8 @@ def build_pdf(filename: str):
     # Meta box
     meta_data = [
         [
-            Paragraph("<b>Project:</b> Capstone Full-Stack AI System", table_cell_style),
-            Paragraph("<b>Framework:</b> LangGraph + LangChain + FastAPI + React", table_cell_style),
+            Paragraph("<b>Project:</b> PickGuard AI Capstone Full-Stack System", table_cell_style),
+            Paragraph("<b>Team:</b> <b>Vision Forge</b> (Author / Engineer: <b>Ruban Raj</b>)", table_cell_style),
         ],
         [
             Paragraph("<b>Domain:</b> Logistics / Fulfilment Operations", table_cell_style),

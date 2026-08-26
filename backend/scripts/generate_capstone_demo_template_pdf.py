@@ -182,7 +182,7 @@ def build_pdf(filename: str):
     team_data = [
         [
             Paragraph("<b>Team Name:</b>", table_cell_bold),
-            Paragraph("<b>PickGuard AI</b> (Author / Engineer: <b>Ruban Raj</b>)", table_cell_style),
+            Paragraph("<b>Vision Forge</b> (Author / Engineer: <b>Ruban Raj</b>)", table_cell_style),
         ],
         [
             Paragraph("<b>Who is the User?</b>", table_cell_bold),
